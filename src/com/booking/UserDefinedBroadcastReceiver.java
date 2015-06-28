@@ -11,6 +11,6 @@ import java.util.Date;
 
 public class UserDefinedBroadcastReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
-//        Toast.makeText(context, "You are in the same app...SAFE!!!", Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "You are in the same app...SAFE!!!", Toast.LENGTH_LONG).show();
     }
 }
