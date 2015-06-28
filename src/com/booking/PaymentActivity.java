@@ -14,7 +14,6 @@ public class PaymentActivity extends Activity {
 
     public void makePayment(View view) {
         Intent intent = new Intent();
-        intent.putExtra("Extra", "use this intent");
         intent.setAction("com.booking.action.PAY");
         sendBroadcast(intent);
     }

@@ -5,12 +5,15 @@
               android:layout_height="fill_parent"
         >
   <TextView
+          android:paddingTop="20dp"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
-          android:text="Welcome to Movie Ticket Booking App"/>
+          android:text="Welcome to Movie Ticket Booking App"
+          android:textSize="30sp"/>
   <Button
-          style="?android:attr/buttonStyleSmall"
-          android:layout_width="wrap_content"
+          android:layout_marginTop="20dp"
+          android:textSize="30sp"
+          android:layout_width="268dp"
           android:layout_height="wrap_content"
           android:text="Book tickets"
           android:onClick="bookTickets"
