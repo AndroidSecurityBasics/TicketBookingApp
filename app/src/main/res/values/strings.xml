@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TicketBookingApp</string>
+    <string name="book_tickets">Book tickets</string>
+    <string name="pay">Proceed to payment</string>
+    <string name="two_tickets">You have booked two tickets</string>
+    <string name="welcome">Welcome to movie ticket booking app</string>
+</resources>
