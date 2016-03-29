@@ -26,25 +26,6 @@ public class PaymentActivity extends AppCompatActivity {
     public void makePayment(View view) {
         Intent intent = new Intent();
         intent.setAction(PAYMENT_ACTION);
-        LocalBroadcastManager localBroadcastManager = LocalBroadcastManager.getInstance(this);
-        localBroadcastManager.sendBroadcast(intent);
+        sendBroadcast(intent);
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        LocalBroadcastManager.getInstance(this).registerReceiver(userDefinedBroadcastReceiver, new IntentFilter(PAYMENT_ACTION));
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        LocalBroadcastManager.getInstance(this).unregisterReceiver(userDefinedBroadcastReceiver);
-    }
-
-    private BroadcastReceiver userDefinedBroadcastReceiver = new BroadcastReceiver() {
-        public void onReceive(Context context, Intent intent) {
-            Toast.makeText(context, "You are in the same app...SAFE!!!", Toast.LENGTH_LONG).show();
-        }
-    };
 }
